@@ -3,7 +3,7 @@ from ssh_utils import Ssh_utils
 
 
 def test_rsa(args):
-    """ fonction for config subcommand"""
+    """ fonction for test_rsa subcommand"""
     ssh_obj = Ssh_utils()
     ssh_obj.execute_test()
 
