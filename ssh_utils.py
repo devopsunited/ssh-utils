@@ -3,7 +3,7 @@ import paramiko
 class Ssh_utils:
 
     def test_connection_rsa(self):
-        "test ssh to the remote server"
+        
         result_flag = True
         self.target_ip = input("Enter an IP address to connect to: ") 
         self.target_user = input("Enter the user to connect with: ") 

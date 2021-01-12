@@ -14,14 +14,13 @@ def test_rsa(args):
 parser = argparse.ArgumentParser()
 subparsers = parser.add_subparsers(help='sub-command help')
 
-# create the parser for the "config" command
-parser_config = subparsers.add_parser('test_rsa', help='test ssh on remote with RSA')
-parser_config.set_defaults(func=test_rsa)
+# create the parser for the "testrsa" command
+parser_testrsa = subparsers.add_parser('test_rsa', help='test ssh on remote with RSA')
+parser_testrsa.set_defaults(func=test_rsa)
 
 
 try:
     args = parser.parse_args()
     args.func(args)
 except Exception as e:
-    print(e)
     parser.parse_args(['--help'])
