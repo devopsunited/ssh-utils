@@ -1,0 +1,6 @@
+*_env/
+.DS_store
+__pycache__
+bin
+include
+lib
